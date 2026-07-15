@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brasserie Artemus - Brasserie artisanale française familiale. Découvrez nos bières craft brassées avec passion depuis trois générations.">
+    <meta name="keywords" content="brasserie artisanale, bière française, craft beer, bière artisanale, brasserie familiale">
+    <meta name="author" content="Brasserie Artemus">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brasserie Artemus - L'Art de la Bière Artisanale">
+    <meta property="og:description" content="Découvrez nos bières artisanales brassées avec passion depuis trois générations dans le respect de la tradition française.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.brasserie-artemus.fr">
+    <meta property="og:image" content="https://www.brasserie-artemus.fr/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brasserie Artemus - L'Art de la Bière Artisanale">
+    <meta name="twitter:description" content="Découvrez nos bières artisanales brassées avec passion depuis trois générations.">
+    
+    <title>Brasserie Artemus - L'Art de la Bière Artisanale</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ARTEMUS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/notre-histoire.html">Notre Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nos-bieres.html">Nos Bières</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=80');" data-aos="fade-in">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Brasserie Artemus</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">L'Art de la Bière Artisanale</p>
+            <div class="hero-breadcrumb" data-aos="fade-up" data-aos-delay="600">
+                <span>Accueil</span>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="800">
+                <a href="pages/nos-bieres.html" class="btn btn-primary">Découvrir Nos Bières</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Introduction Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="section-header text-start">
+                            <p class="section-subtitle">Notre Passion</p>
+                            <h2 class="section-title">Une Tradition Familiale Depuis 1923</h2>
+                            <div class="section-divider ms-0"></div>
+                        </div>
+                        <p class="lead text-white">Depuis trois générations, la famille Artemus perpétue l'art ancestral du brassage artisanal dans le respect des traditions françaises.</p>
+                        <p>Chaque bière est le fruit d'un savoir-faire transmis de père en fils, où la passion se mêle à l'excellence pour créer des saveurs uniques et authentiques.</p>
+                        <a href="pages/notre-histoire.html" class="btn btn-secondary mt-3">Notre Histoire</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1575037614874-2a4d6899c941?w=800&q=80" alt="Brassage artisanal" class="img-fluid rounded-4 shadow-lg" data-aos="fade-left">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Beers Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Nos Créations</p>
+                    <h2 class="section-title">Bières Vedettes</h2>
+                    <div class="section-divider"></div>
+                    <p>Découvrez nos bières les plus appréciées, brassées avec passion et expertise.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="beer-card">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Bière Blonde Artemus">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Blonde Artemus</h3>
+                                <p class="beer-style">Blonde Traditionnelle</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">5.2%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">25</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une blonde dorée aux notes légères de malt et de houblon, parfaite pour partager.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Fruité</span>
+                                    <span class="flavor-tag">Léger</span>
+                                    <span class="flavor-tag">Rafraîchissant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="beer-card">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=600&q=80" alt="Bière Ambrée Artemus">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Ambrée Tradition</h3>
+                                <p class="beer-style">Ambrée de Caractère</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">6.5%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">35</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une ambrée robuste aux arômes de caramel et de pain grillé, idéale pour les gourmets.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Caramel</span>
+                                    <span class="flavor-tag">Pain grillé</span>
+                                    <span class="flavor-tag">Corps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="beer-card">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=600&q=80" alt="Bière IPA Artemus">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">IPA Artisanale</h3>
+                                <p class="beer-style">Indian Pale Ale</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">6.8%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">55</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une IPA moderne aux notes d'agrumes et de pin, pour les amateurs de houblon.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Agrumes</span>
+                                    <span class="flavor-tag">Pin</span>
+                                    <span class="flavor-tag">Houblonné</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="pages/nos-bieres.html" class="btn btn-primary">Toutes Nos Bières</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Nos Valeurs</p>
+                    <h2 class="section-title">Pourquoi Choisir Artemus</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 text-center p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="bi bi-heart-pulse fs-1" style="color: var(--accent-gold);"></i>
+                                </div>
+                                <h4 class="card-title">Passion</h4>
+                                <p class="card-text">Chaque bière est brassée avec amour et dévouement, reflétant notre passion pour l'excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 text-center p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="bi bi-gem fs-1" style="color: var(--accent-gold);"></i>
+                                </div>
+                                <h4 class="card-title">Qualité</h4>
+                                <p class="card-text">Ingrédients sélectionnés, processus rigoureux, contrôle qualité à chaque étape de production.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 text-center p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="bi bi-tree fs-1" style="color: var(--accent-gold);"></i>
+                                </div>
+                                <h4 class="card-title">Tradition</h4>
+                                <p class="card-text">Un savoir-faire ancestral transmis depuis trois générations, dans le respect des méthodes traditionnelles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100 text-center p-4">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <i class="bi bi-geo-alt fs-1" style="color: var(--accent-gold);"></i>
+                                </div>
+                                <h4 class="card-title">Local</h4>
+                                <p class="card-text">Ingrédients locaux, production artisanale, ancrage dans notre région et soutien aux producteurs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Brewing Process Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80" alt="Processus de brassage" class="img-fluid rounded-4 shadow-lg" data-aos="fade-right">
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                        <div class="section-header text-start">
+                            <p class="section-subtitle">Notre Savoir-Faire</p>
+                            <h2 class="section-title">L'Art du Brassage</h2>
+                            <div class="section-divider ms-0"></div>
+                        </div>
+                        <p class="lead text-white">Notre processus de brassage allie tradition et innovation pour créer des bières d'exception.</p>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Sélection Rigoureuse</h5>
+                                <p class="mb-0">Malt, houblon et levures choisis avec soin pour garantir la qualité optimale.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Brassage Artisanal</h5>
+                                <p class="mb-0">Chaque étape est maîtrisée manuellement par nos brasseurs expérimentés.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Affinage Patient</h5>
+                                <p class="mb-0">Nos bières reposent le temps nécessaire pour développer leurs arômes uniques.</p>
+                            </div>
+                        </div>
+                        <a href="pages/notre-histoire.html" class="btn btn-secondary mt-3">En Savoir Plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Statistics Section -->
+        <section class="stats-section" data-aos="fade-up">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Ans d'Expérience</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Bières Créées</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Générations</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Partenaires</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Preview Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Visite Guidée</p>
+                    <h2 class="section-title">Notre Univers</h2>
+                    <div class="section-divider"></div>
+                    <p>Plongez dans l'atmosphère de notre brasserie à travers nos images.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&q=80" alt="Cuves de brassage" class="card-img-top">
+                                <div class="card-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1575037614874-2a4d6899c941?w=600&q=80" alt="Fûts de bois" class="card-img-top">
+                                <div class="card-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Bouteilles de bière" class="card-img-top">
+                                <div class="card-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="pages/galerie.html" class="btn btn-primary">Voir la Galerie</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="section-title mb-4">Prêt à Découvrir Nos Bières ?</h2>
+                        <p class="lead mb-4">Visitez notre brasserie ou contactez-nous pour en savoir plus sur nos produits et nos partenariats.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                            <a href="pages/contact.html" class="btn btn-primary">Nous Contacter</a>
+                            <a href="pages/nos-bieres.html" class="btn btn-outline">Nos Bières</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Location Preview Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="section-header text-start">
+                            <p class="section-subtitle">Nous Trouver</p>
+                            <h2 class="section-title">Notre Brasserie</h2>
+                            <div class="section-divider ms-0"></div>
+                        </div>
+                        <p class="lead text-white">Située au cœur de la région, notre brasserie vous accueille pour des visites guidées et des dégustations.</p>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-geo-alt-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Adresse</h5>
+                                <p class="mb-0">123 Rue du Brassage<br>75000 Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-clock-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Horaires</h5>
+                                <p class="mb-0">Lun - Ven : 9h - 18h<br>Sam : 10h - 17h</p>
+                            </div>
+                        </div>
+                        <a href="pages/contact.html" class="btn btn-secondary mt-3">Plan d'Accès</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1635959481000!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">ARTEMUS</h3>
+                    <p>Brasserie artisanale française depuis 1923. Passion, tradition et excellence dans chaque goutte.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="pages/notre-histoire.html">Notre Histoire</a></li>
+                        <li><a href="pages/nos-bieres.html">Nos Bières</a></li>
+                        <li><a href="pages/galerie.html">Galerie</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>123 Rue du Brassage, 75000 Paris</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <span>contact@artemus.fr</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p>Recevez nos actualités et offres exclusives.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email" required>
+                            <button class="btn btn-primary" type="submit">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="pages/mentions-legales.html">Mentions légales</a>
+                    <a href="pages/politique-confidentialite.html">Politique de confidentialité</a>
+                    <a href="pages/gestion-cookies.html">Gestion des cookies</a>
+                    <a href="pages/plan-site.html">Plan du site</a>
+                </div>
+                <p>&copy; 2024 Brasserie Artemus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p>Nous utilisons des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre politique de confidentialité.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="btn btn-primary cookie-accept">Accepter</button>
+                <button class="btn btn-outline cookie-decline">Refuser</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la galerie photo de Brasserie Artemus. Images de notre brasserie, processus de brassage, et événements.">
+    <meta name="keywords" content="galerie brasserie, photos brassage, images bière artisanale, brasserie Artemus">
+    <meta name="author" content="Brasserie Artemus">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galerie - Brasserie Artemus">
+    <meta property="og:description" content="Plongez dans l'univers visuel de notre brasserie artisanale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.brasserie-artemus.fr/pages/galerie.html">
+    
+    <title>Galerie - Brasserie Artemus</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        /* Lightbox Styles */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .lightbox-close:hover {
+            color: var(--accent-gold);
+        }
+        
+        /* Masonry Gallery */
+        .gallery-masonry {
+            column-count: 3;
+            column-gap: 1.5rem;
+        }
+        
+        @media (max-width: 992px) {
+            .gallery-masonry {
+                column-count: 2;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .gallery-masonry {
+                column-count: 1;
+            }
+        }
+        
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+            transition: transform var(--transition-slow);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">ARTEMUS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notre-histoire.html">Notre Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nos-bieres.html">Nos Bières</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1920&q=80');" data-aos="fade-in">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Notre Galerie</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">L'Univers Visuel d'Artemus</p>
+            <div class="hero-breadcrumb" data-aos="fade-up" data-aos-delay="600">
+                <a href="../index.html">Accueil</a> <span class="mx-2">/</span> <span>Galerie</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Introduction Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-header">
+                            <p class="section-subtitle">Notre Univers</p>
+                            <h2 class="section-title">Découvrez Notre Brasserie</h2>
+                            <div class="section-divider"></div>
+                        </div>
+                        <p class="lead text-white">Plongez dans l'atmosphère de notre brasserie à travers ces images qui capturent l'essence de notre artisanat.</p>
+                        <p>Chaque photo raconte une histoire : du brassage minutieux à la dégustation finale, en passant par nos équipements traditionnels et nos moments de partage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Filter Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-3 justify-content-center mb-5">
+                    <button class="btn btn-primary gallery-filter active" data-filter="all">Toutes</button>
+                    <button class="btn btn-outline gallery-filter" data-filter="brasserie">Brasserie</button>
+                    <button class="btn btn-outline gallery-filter" data-filter="brassage">Brassage</button>
+                    <button class="btn btn-outline gallery-filter" data-filter="bieres">Bières</button>
+                    <button class="btn btn-outline gallery-filter" data-filter="evenements">Événements</button>
+                    <button class="btn btn-outline gallery-filter" data-filter="equipe">Équipe</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="gallery-masonry" id="gallery-container">
+                    
+                    <!-- Brasserie Images -->
+                    <div class="gallery-item" data-category="brasserie" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80" alt="Extérieur de la brasserie" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="brasserie" data-aos="fade-up" data-aos-delay="150">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80" alt="Cuves de fermentation" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="brasserie" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1575037614874-2a4d6899c941?w=800&q=80" alt="Fûts de stockage" loading="lazy">
+                    </div>
+                    
+                    <!-- Brassage Images -->
+                    <div class="gallery-item" data-category="brassage" data-aos="fade-up" data-aos-delay="250">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80" alt="Processus de brassage" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="brassage" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1575037614874-2a4d6899c941?w=800&q=80" alt="Maltage" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="brassage" data-aos="fade-up" data-aos-delay="350">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80" alt="Houblonnage" loading="lazy">
+                    </div>
+                    
+                    <!-- Bières Images -->
+                    <div class="gallery-item" data-category="bieres" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80" alt="Bouteilles de bière" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="bieres" data-aos="fade-up" data-aos-delay="450">
+                        <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=800&q=80" alt="Verre de bière" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="bieres" data-aos="fade-up" data-aos-delay="500">
+                        <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=80" alt="Collection de bières" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="bieres" data-aos="fade-up" data-aos-delay="550">
+                        <img src="https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=800&q=80" alt="Bière noire" loading="lazy">
+                    </div>
+                    
+                    <!-- Événements Images -->
+                    <div class="gallery-item" data-category="evenements" data-aos="fade-up" data-aos-delay="600">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80" alt="Festival de bière" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="evenements" data-aos="fade-up" data-aos-delay="650">
+                        <img src="https://images.unsplash.com/photo-1575037614874-2a4d6899c941?w=800&q=80" alt="Dégustation" loading="lazy">
+                    </div>
+                    
+                    <!-- Équipe Images -->
+                    <div class="gallery-item" data-category="equipe" data-aos="fade-up" data-aos-delay="700">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80" alt="Équipe de brasseurs" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="equipe" data-aos="fade-up" data-aos-delay="750">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80" alt="Maître brasseur" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="brasserie" data-aos="fade-up" data-aos-delay="800">
+                        <img src="https://images.unsplash.com/photo-1575037614874-2a4d6899c941?w=800&q=80" alt="Atelier" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="bieres" data-aos="fade-up" data-aos-delay="850">
+                        <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800&q=80" alt="Bière artisanale" loading="lazy">
+                    </div>
+                    
+                    <div class="gallery-item" data-category="brassage" data-aos="fade-up" data-aos-delay="900">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80" alt="Contrôle qualité" loading="lazy">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="section-title mb-4">Visitez Notre Brasserie</h2>
+                        <p class="lead mb-4">Les images sont belles, mais l'expérience est encore meilleure en personne. Venez nous rendre visite !</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                            <a href="contact.html" class="btn btn-primary">Planifier une Visite</a>
+                            <a href="nos-bieres.html" class="btn btn-outline">Nos Bières</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">ARTEMUS</h3>
+                    <p>Brasserie artisanale française depuis 1923. Passion, tradition et excellence dans chaque goutte.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="notre-histoire.html">Notre Histoire</a></li>
+                        <li><a href="nos-bieres.html">Nos Bières</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>123 Rue du Brassage, 75000 Paris</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <span>contact@artemus.fr</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p>Recevez nos actualités et offres exclusives.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email" required>
+                            <button class="btn btn-primary" type="submit">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                    <a href="gestion-cookies.html">Gestion des cookies</a>
+                    <a href="plan-site.html">Plan du site</a>
+                </div>
+                <p>&copy; 2024 Brasserie Artemus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p>Nous utilisons des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre politique de confidentialité.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="btn btn-primary cookie-accept">Accepter</button>
+                <button class="btn btn-outline cookie-decline">Refuser</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Gallery Filter
+        const filterButtons = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter items
+                galleryItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

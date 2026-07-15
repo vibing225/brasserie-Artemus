@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez toutes les bières artisanales de Brasserie Artemus. Blondes, ambrées, IPA, stouts - des créations uniques pour tous les palais.">
+    <meta name="keywords" content="bières artisanales, bière blonde, bière ambrée, IPA, stout, craft beer, bière française">
+    <meta name="author" content="Brasserie Artemus">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nos Bières - Brasserie Artemus">
+    <meta property="og:description" content="Découvrez notre gamme complète de bières artisanales brassées avec passion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.brasserie-artemus.fr/pages/nos-bieres.html">
+    
+    <title>Nos Bières - Brasserie Artemus</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">ARTEMUS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notre-histoire.html">Notre Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nos-bieres.html">Nos Bières</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1608270586620-248524c67de9?w=1920&q=80');" data-aos="fade-in">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Nos Bières</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Une Collection de Créations Artisanales</p>
+            <div class="hero-breadcrumb" data-aos="fade-up" data-aos-delay="600">
+                <a href="../index.html">Accueil</a> <span class="mx-2">/</span> <span>Nos Bières</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Introduction Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-header">
+                            <p class="section-subtitle">Notre Gamme</p>
+                            <h2 class="section-title">Des Bières d'Exception</h2>
+                            <div class="section-divider"></div>
+                        </div>
+                        <p class="lead text-white">Chaque bière Artemus est le fruit d'un savoir-faire ancestral, brassée avec passion et les meilleurs ingrédients pour créer des saveurs uniques.</p>
+                        <p>Notre gamme comprend des bières traditionnelles et des créations modernes, toutes unies par la même recherche d'excellence et d'authenticité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Filter Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="d-flex flex-wrap gap-3 justify-content-center mb-5">
+                    <button class="btn btn-primary filter-btn active" data-filter="all">Toutes</button>
+                    <button class="btn btn-outline filter-btn" data-filter="blonde">Blondes</button>
+                    <button class="btn btn-outline filter-btn" data-filter="ambree">Ambrées</button>
+                    <button class="btn btn-outline filter-btn" data-filter="ipa">IPA</button>
+                    <button class="btn btn-outline filter-btn" data-filter="stout">Stouts</button>
+                    <button class="btn btn-outline filter-btn" data-filter="blanche">Blanches</button>
+                    <button class="btn btn-outline filter-btn" data-filter="saison">Saisons</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Beer Cards Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <!-- Blonde Artemus -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="beer-card" data-style="blonde">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Bière Blonde Artemus">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Blonde Artemus</h3>
+                                <p class="beer-style">Blonde Traditionnelle</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">5.2%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">25</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Notre blonde signature, dorée et légère, aux notes subtiles de malt et de houblon. Parfaite pour tout moment de la journée.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Fruité</span>
+                                    <span class="flavor-tag">Léger</span>
+                                    <span class="flavor-tag">Rafraîchissant</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt d'orge, houblon français, levure artisanale</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Fromages frais, salades, fruits de mer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ambrée Tradition -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="beer-card" data-style="ambree">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=600&q=80" alt="Bière Ambrée Tradition">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Ambrée Tradition</h3>
+                                <p class="beer-style">Ambrée de Caractère</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">6.5%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">35</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une ambrée robuste aux arômes de caramel et de pain grillé, résultat d'un maltage prolongé et d'une fermentation lente.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Caramel</span>
+                                    <span class="flavor-tag">Pain grillé</span>
+                                    <span class="flavor-tag">Corps</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt caramel, houblon aromatique, levure belge</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Viandes grillées, fromages affinés, desserts au chocolat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- IPA Artisanale -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="beer-card" data-style="ipa">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=600&q=80" alt="Bière IPA Artisanale">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">IPA Artisanale</h3>
+                                <p class="beer-style">Indian Pale Ale</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">6.8%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">55</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une IPA moderne aux notes d'agrumes et de pin, dry-hoppée avec les meilleurs houblons américains et néo-zélandais.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Agrumes</span>
+                                    <span class="flavor-tag">Pin</span>
+                                    <span class="flavor-tag">Houblonné</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt pale, houblon Cascade/Citra, levure américaine</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Cuisine asiatique, fromages forts, burgers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stout Impériale -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="beer-card" data-style="stout">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=600&q=80" alt="Bière Stout Impériale">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Stout Impériale</h3>
+                                <p class="beer-style">Stout de Garde</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">8.5%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">70</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une stout intense aux notes de café, chocolat et caramel, vieillie en fût de chêne pour une complexité exceptionnelle.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Café</span>
+                                    <span class="flavor-tag">Chocolat</span>
+                                    <span class="flavor-tag">Boisé</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt torréfié, houblon Fuggles, levure irlandaise</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Chocolat noir, desserts, fromages bleus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blanche Pure -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="beer-card" data-style="blanche">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=600&q=80" alt="Bière Blanche Pure">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Blanche Pure</h3>
+                                <p class="beer-style">Blanche Traditionnelle</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">4.8%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">15</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une blanche rafraîchissante aux notes d'agrumes et d'épices douces, brassée avec du blé et de la coriandre.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Agrumes</span>
+                                    <span class="flavor-tag">Épicé</span>
+                                    <span class="flavor-tag">Léger</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Blé, orge, coriandre, écorce d'orange, levure belge</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Fruits de mer, salades, fromages de chèvre</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Saison Rustique -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="beer-card" data-style="saison">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=600&q=80" alt="Bière Saison Rustique">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Saison Rustique</h3>
+                                <p class="beer-style">Saison Fermière</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">6.2%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">30</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une saison complexe aux notes terreuses et fruitées, inspirée des traditions fermières belges.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Terreux</span>
+                                    <span class="flavor-tag">Fruité</span>
+                                    <span class="flavor-tag">Épicé</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt de saison, houblon Saaz, levure sauvage</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Charcuterie, fromages, plats rustiques</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Triple Dorée -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class="beer-card" data-style="blonde">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=600&q=80" alt="Bière Triple Dorée">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Triple Dorée</h3>
+                                <p class="beer-style">Triple Belge</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">9.5%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">40</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une triple puissante et élégante aux notes de fruits tropicaux et d'épices, doublement fermentée pour une richesse exceptionnelle.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Tropical</span>
+                                    <span class="flavor-tag">Épicé</span>
+                                    <span class="flavor-tag">Puissant</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt triple, houblon Styrian, levure trappiste</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Fromages forts, desserts, foie gras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Porter Noire -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="beer-card" data-style="stout">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=600&q=80" alt="Bière Porter Noire">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Porter Noire</h3>
+                                <p class="beer-style">Porter London</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">5.8%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">45</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une porter onctueuse aux notes de chocolat au lait et de café, douce et complexe à la fois.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Chocolat</span>
+                                    <span class="flavor-tag">Café</span>
+                                    <span class="flavor-tag">Onctueux</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt brun, houblon East Kent, levure anglaise</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Viandes rouges, fromages, chocolat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pale Ale Fraîche -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class="beer-card" data-style="ipa">
+                            <div class="beer-card-image">
+                                <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=600&q=80" alt="Bière Pale Ale Fraîche">
+                            </div>
+                            <div class="beer-card-content">
+                                <h3 class="beer-name">Pale Ale Fraîche</h3>
+                                <p class="beer-style">American Pale Ale</p>
+                                <div class="beer-stats">
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">5.5%</div>
+                                        <div class="beer-stat-label">Alcool</div>
+                                    </div>
+                                    <div class="beer-stat">
+                                        <div class="beer-stat-value">40</div>
+                                        <div class="beer-stat-label">IBU</div>
+                                    </div>
+                                </div>
+                                <p class="beer-description">Une pale ale équilibrée aux notes d'agrumes et de fleurs, idéale pour les amateurs de houblon modérés.</p>
+                                <div class="beer-flavor-profile">
+                                    <span class="flavor-tag">Agrumes</span>
+                                    <span class="flavor-tag">Floral</span>
+                                    <span class="flavor-tag">Équilibré</span>
+                                </div>
+                                <div class="mt-3">
+                                    <p class="small text-muted mb-1"><strong>Ingrédients:</strong> Malt pale, houblon Amarillo, levure californienne</p>
+                                    <p class="small text-muted mb-0"><strong>Accords mets:</strong> Poulet grillé, salades, fromages légers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Brewing Process Section -->
+        <section class="section-secondary" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80" alt="Processus de brassage" class="img-fluid rounded-4 shadow-lg" data-aos="fade-right">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-header text-start">
+                            <p class="section-subtitle">Notre Processus</p>
+                            <h2 class="section-title">Brassées avec Passion</h2>
+                            <div class="section-divider ms-0"></div>
+                        </div>
+                        <p class="lead text-white">Chaque bière Artemus suit un processus rigoureux pour garantir qualité et authenticité.</p>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-1-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Sélection des Ingrédients</h5>
+                                <p class="mb-0">Malt, houblon et levures choisis avec soin parmi les meilleurs producteurs.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-2-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Maltage et Concassage</h5>
+                                <p class="mb-0">Préparation méticuleuse des grains pour extraire les sucres fermentescibles.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-3-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Empâtage et Filtration</h5>
+                                <p class="mb-0">Création du moût et séparation des drêches pour une clarté parfaite.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-4-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Ébullition et Houblonnage</h5>
+                                <p class="mb-0">Stérilisation et aromatisation avec différents houblons selon la recette.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-5-circle-fill me-3 mt-1" style="color: var(--accent-gold);"></i>
+                            <div>
+                                <h5 class="text-white mb-1">Fermentation et Affinage</h5>
+                                <p class="mb-0">Transformation des sucres en alcool et maturation pour développer les arômes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="section-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="section-title mb-4">Trouvez Votre Bière Préférée</h2>
+                        <p class="lead mb-4">Visitez notre brasserie pour une dégustation guidée ou contactez-nous pour trouver les points de vente près de chez vous.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                            <a href="contact.html" class="btn btn-primary">Nous Contacter</a>
+                            <a href="galerie.html" class="btn btn-outline">Notre Galerie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="footer-title">ARTEMUS</h3>
+                    <p>Brasserie artisanale française depuis 1923. Passion, tradition et excellence dans chaque goutte.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="notre-histoire.html">Notre Histoire</a></li>
+                        <li><a href="nos-bieres.html">Nos Bières</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>123 Rue du Brassage, 75000 Paris</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <span>contact@artemus.fr</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p>Recevez nos actualités et offres exclusives.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email" required>
+                            <button class="btn btn-primary" type="submit">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                    <a href="gestion-cookies.html">Gestion des cookies</a>
+                    <a href="plan-site.html">Plan du site</a>
+                </div>
+                <p>&copy; 2024 Brasserie Artemus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <p>Nous utilisons des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre politique de confidentialité.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button class="btn btn-primary cookie-accept">Accepter</button>
+                <button class="btn btn-outline cookie-decline">Refuser</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Initialize beer filter
+        initBeerFilter();
+    </script>
+</body>
+</html>
