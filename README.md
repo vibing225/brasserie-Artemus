@@ -186,14 +186,14 @@ Artemus/
 ```
 
 ### Modifier les images
-Remplacez les URLs Unsplash par vos propres images dans le dossier `images/`
+Le site utilise déjà des chemins d'images locaux dans le dossier `images/`. Remplacez les fichiers placeholder par vos propres images de la brasserie.
 
 ### Modifier le contenu
 Éditez directement les fichiers HTML pour modifier le texte et le contenu
 
 ## 📝 Notes de Développement
 
-- Le site utilise des images placeholder Unsplash
+- Le site utilise des chemins d'images locaux (images/)
 - Les formulaires sont configurés côté client (backend nécessaire pour l'envoi réel)
 - La carte Google Maps utilise un embed statut (clé API nécessaire pour personnalisation)
 - Les cookies sont gérés via localStorage
