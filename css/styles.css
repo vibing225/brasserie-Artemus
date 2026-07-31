@@ -48,6 +48,19 @@
 /* ===================================
    BASE STYLES
    =================================== */
+
+/* Video Styles */
+.video-wrapper {
+    position: relative;
+    background: var(--bg-tertiary);
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 * {
     margin: 0;
     padding: 0;
@@ -1001,6 +1014,12 @@ section {
 /* ===================================
    RESPONSIVE STYLES
    =================================== */
+@media (max-width: 992px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
 @media (max-width: 768px) {
     section {
         padding: var(--spacing-lg) var(--spacing-md);
@@ -1008,6 +1027,40 @@ section {
     
     .hero-content {
         padding: var(--spacing-md);
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    }
+    
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    /* Mobile navigation improvements */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-secondary);
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        padding: var(--spacing-md);
+        margin-top: var(--spacing-xs);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .nav-link {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--bg-tertiary);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
     }
     
     .timeline::before {
@@ -1040,15 +1093,48 @@ section {
         flex-direction: column;
         gap: var(--spacing-xs);
     }
+    
+    /* Video section responsive */
+    .video-wrapper {
+        aspect-ratio: 16 / 9;
+    }
+    
+    /* Gallery responsive */
+    .gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Stats section responsive */
+    .stat-item {
+        padding: var(--spacing-sm);
+    }
+    
+    /* Section header responsive */
+    .section-header {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Card improvements */
+    .card {
+        margin-bottom: var(--spacing-md);
+    }
 }
 
 @media (max-width: 576px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
     }
     
     .btn {
@@ -1060,6 +1146,10 @@ section {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
     
+    .gallery-masonry {
+        grid-template-columns: 1fr;
+    }
+    
     .beer-stats {
         flex-direction: column;
         gap: var(--spacing-sm);
@@ -1067,7 +1157,7 @@ section {
     
     /* Fix beer cards on small screens */
     .beer-card-image {
-        height: 200px;
+        height: 180px;
     }
     
     .beer-card-content {
@@ -1075,15 +1165,15 @@ section {
     }
     
     .beer-name {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .beer-style {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
     .beer-stat-value {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .beer-description {
@@ -1093,6 +1183,56 @@ section {
     .flavor-tag {
         font-size: 0.75rem;
         padding: 3px 10px;
+    }
+    
+    /* Footer responsive */
+    .footer {
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    /* Section padding on mobile */
+    section {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+    
+    /* Touch targets */
+    .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Card responsive */
+    .card {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    /* Form inputs responsive */
+    .form-control {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Navigation responsive */
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-link {
+        padding: 10px 15px;
+    }
+    
+    /* Video responsive */
+    .video-wrapper {
+        aspect-ratio: 16 / 9;
     }
     
     /* Fix regular cards on small screens */
